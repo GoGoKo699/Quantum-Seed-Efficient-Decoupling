@@ -1,0 +1,23 @@
+# Quantum Seed-Efficient Decoupling
+
+> Randomized Pauli frames for a qubit interacting repeatedly with a retained bath. One short private seed controls complete process error, with a matching logarithmic seed lower bound.
+
+The authoritative model uses a finite joint qubit–bath unitary in each slot, ideal frame conjugation and corrected logical tester ports. A tester may intervene adaptively without access to frame labels or the bath. The bound compares seed-averaged process outputs with an ideal process for the same tester.
+
+## Scientific entry points
+
+- [Overview](README.md) and [scientific reading route](science/README.md)
+- [Model and charged resources](science/model.md)
+- [Finite-field Pauli frame schedule](science/seed.md)
+- [Tester-level suppression theorem and proof](science/process-bound.md)
+- [Seed min-entropy converse](science/converse.md)
+- [Approximate and exact independent-frame simulation](science/independent-process.md)
+- [Robustness to dressed-slot deviations and initial seed leakage](science/control-robustness.md)
+- [Primary literature and comparison](references/RELATED_WORK.md)
+- [Numerical and algebraic checks](verification/README.md)
+
+## Learning
+
+- [Learning route](learning/README.md)
+- [Watrous bridge](learning/WATROUS_BRIDGE.md)
+- [Thirty project milestones](learning/MILESTONES.md)
