@@ -13,11 +13,11 @@ Draw $`s\in F^m`$ uniformly, compute $`r_t=s\cdot a_t`$, and use $`r_t`$ as the 
 Let $`\chi_{tp}(s)`$ denote the sign in $`P_t^\dagger\sigma_pP_t=\chi_{tp}(s)\sigma_p`$. For $`p\ne0`$, the sign takes the form
 
 ```math
-\chi_{tp}(s)=(-1)^{\operatorname{Tr}_{F/\mathbb F_2}(s\cdot b_{tp})},
+\chi_{tp}(s)=(-1)^{\mathrm{Tr}_{F/\mathbb F_2}(s\cdot b_{tp})},
 \qquad b_{tp}=c_p a_t,
 ```
 
-where the three values $`c_p`$ run through $`F\setminus\{0\}`$. Conjugation by $`X^xZ^z`$ gives the sign exponents $`z,x+z,x`$ for $`X,Y,Z`$, respectively. These three nonzero binary linear maps on $`F`$ are the three maps $`r\mapsto\operatorname{Tr}_{F/\mathbb F_2}(cr)`$ with $`c\ne0`$.
+where the three values $`c_p`$ run through $`F\setminus\{0\}`$. Conjugation by $`X^xZ^z`$ gives the sign exponents $`z,x+z,x`$ for $`X,Y,Z`$, respectively. These three nonzero binary linear maps on $`F`$ are the three maps $`r\mapsto\mathrm{Tr}_{F/\mathbb F_2}(cr)`$ with $`c\ne0`$.
 
 All $`3n`$ tags $`b_{tp}`$ are distinct and nonzero. Their characters have mean zero and are orthogonal in $`L^2`$ of the uniform seed. Products of characters add the corresponding tags. The average of a product of signs is one if its tag sum vanishes and zero otherwise. The [process proof](process-bound.md) uses this rule to sum over two selected slot labels, as well as pairwise orthogonality after multiplying all signs by a fixed prefix.
 

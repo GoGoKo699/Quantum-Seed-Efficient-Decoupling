@@ -22,7 +22,7 @@ For a sign chosen once for the whole run, take the fixed noise sequence $`U_t^\p
 
 If the ensemble implements the ideal channel exactly in the zero-noise case, every positive-probability schedule has $`W`$ proportional to the identity. This follows because the Choi state of the ideal channel is pure. The chosen branch then fails the Bell test with probability $`\sin^2 a`$ for either sign. Every other branch has a nonnegative failure probability, so the averaged Bell-test failure is at least $`p_{\max}\sin^2 a`$. The ideal process never fails this test.
 
-The bound also allows a noiseless residual unitary in the chosen branch. With its global phase removed, write $`W=w_0I+i\boldsymbol w\cdot\boldsymbol\sigma`$ for real coefficients satisfying $`w_0^2+\|\boldsymbol w\|^2=1`$. Bell-test success equals $`|\operatorname{Tr}(We^{\pm iaZ})/2|^2`$. Averaging the two signs gives
+The bound also allows a noiseless residual unitary in the chosen branch. With its global phase removed, write $`W=w_0I+i\boldsymbol w\cdot\boldsymbol\sigma`$ for real coefficients satisfying $`w_0^2+\|\boldsymbol w\|^2=1`$. Bell-test success equals $`|\mathrm{Tr}(We^{\pm iaZ})/2|^2`$. Averaging the two signs gives
 
 ```math
 w_0^2\cos^2 a+w_z^2\sin^2 a\le \cos^2 a .

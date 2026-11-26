@@ -42,7 +42,7 @@ The [Watrous bridge](WATROUS_BRIDGE.md) supplies the relevant textbook sections.
 
 **Central question.** What is a Pauli coefficient when a qubit operator also acts on the bath?
 
-**Understanding target.** Use the orthogonality relation $`\operatorname{Tr}(\sigma_p\sigma_q)=2\delta_{pq}`$ to see why each coefficient is an operator on the bath and why its extraction includes a factor of $`1/2`$.
+**Understanding target.** Use the orthogonality relation $`\mathrm{Tr}(\sigma_p\sigma_q)=2\delta_{pq}`$ to see why each coefficient is an operator on the bath and why its extraction includes a factor of $`1/2`$.
 
 **Prerequisites and connection.** [M01](#m01-data-bath-and-reference). This expansion identifies which terms can act on the bath alone and which carry a nontrivial data Pauli. [Operator basis](WATROUS_BRIDGE.md#conventions) · [Memory model](../science/model.md)
 

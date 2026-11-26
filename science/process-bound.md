@@ -33,7 +33,7 @@ Thus $`\|v_0\|\le1`$, and its squared norm differs from one by at most $`S`$.
 
 ## Bound the squared deviation
 
-For $`j\ge1`$, fix the first $`j-1`$ nonidentity positions and their labels in a term of $`v_j`$. The last position and label range over all allowed choices after that prefix. Different last choices have orthogonal sign functions. Multiplying them all by the same sign of the prefix preserves orthogonality. This therefore makes the mean squared norm of this group equal to the sum of squared norms of its coefficient vectors. Its square root is at most $`\sqrt S`$ times the product of the prefix weights.
+For $`j\ge1`$, fix the first $`j-1`$ nonidentity positions and their labels in a term of $`v_j`$. The last position and label range over all allowed choices after that prefix. Different last choices have orthogonal sign functions. Multiplying them all by the same sign of the prefix preserves orthogonality. Orthogonality makes the mean squared norm of this group equal to the sum of squared norms of its coefficient vectors. Its square root is at most $`\sqrt S`$ times the product of the prefix weights.
 
 Put $`c_t=\sum_{p=1}^3 w_{tp}`$, so $`\sum_t c_t\le L`$. Summing the prefix weights over distinct ordered positions is bounded by the elementary symmetric polynomial in $`c_t`$ of degree $`j-1`$, which is at most $`L^{j-1}/(j-1)!`$. The latter bound follows by expanding $`(\sum_t c_t)^{j-1}`$ and counting each product on distinct positions $`(j-1)!`$ times. The triangle inequality in the seed-averaged vector norm gives
 

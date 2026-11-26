@@ -21,7 +21,7 @@ The educational anchor is John Watrous’s *The Theory of Quantum Information*, 
 |---|---|
 | Tensor-product registers | The data qubit is $`Q`$, its finite bath is $`E`$, and the tester can hold its own additional registers. |
 | Operator basis | $`\sigma_0=I`$ and $`(\sigma_1,\sigma_2,\sigma_3)=(X,Y,Z)`$. The qubit Weyl operator $`W_{1,1}=-iY`$ agrees with $`Y`$ up to a phase, which cancels in conjugations. |
-| Partial trace | Reduction uses the ordinary partial trace. Expansion coefficients use the normalized Pauli coefficient $`B_{tp}=\operatorname{Tr}_Q[(\sigma_p\otimes I_E)U_t]/2`$. |
+| Partial trace | Reduction uses the ordinary partial trace. Expansion coefficients use the normalized Pauli coefficient $`B_{tp}=\mathrm{Tr}_Q[(\sigma_p\otimes I_E)U_t]/2`$. |
 | Choi vector normalization | Watrous's Choi operator uses an unnormalized maximally entangled vector. The Bell-state test uses the normalized input $`(\lvert00\rangle+\lvert11\rangle)/\sqrt2`$. |
 | Trace and channel norms | The output-state distance is $`D(\rho,\tau)=\lVert\rho-\tau\rVert_1/2`$. A tester supplies both an input and intervening channels, so its accessible output defines the causal process comparison. |
 

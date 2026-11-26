@@ -27,7 +27,7 @@ Write $`\sigma_0=I_Q`$, $`\sigma_1=X`$, $`\sigma_2=Y`$ and $`\sigma_3=Z`$. The P
 ```math
 \begin{aligned}
 U_t&=\sum_{p=0}^3\sigma_p\otimes B_{tp},
-&B_{tp}&=\tfrac12\operatorname{Tr}_Q[(\sigma_p\otimes I_E)U_t],\\
+&B_{tp}&=\tfrac12\mathrm{Tr}_Q[(\sigma_p\otimes I_E)U_t],\\
 w_{tp}&=\|B_{tp}\|_\infty\quad(p\ne0),
 &\beta_t^2&=\sum_{p=1}^3w_{tp}^2,\\
 S&=\sum_{t=1}^n\beta_t^2,
