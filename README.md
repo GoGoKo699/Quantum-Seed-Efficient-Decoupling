@@ -16,6 +16,14 @@ Here $`S=\sum_j\beta_j^2`$ and $`L=\sqrt3\sum_j\beta_j`$, where $`\beta_j`$ is t
 
 In a [five-slot calculation](verification/README.md), four uniform seed bits give an output trace distance of **0.04180** from ideal for one specified tester with a retained bath. Ten bits for independent frames give **0.04182** in that example. It illustrates the finite comparison for that tester.
 
+## Run the private Pauli schedule
+
+1. **Fix the slot labels and draw one seed.** For `n` slots, choose `m = ceil(log4(3n + 1))` and fix `n` distinct length-`m` vectors over GF(4) whose first nonzero entry is 1. Draw one independent uniform vector of `m` field elements using two bits per element, and keep it private. The [finite-field construction](science/seed.md#finite-field-construction) gives the field arithmetic and the label map.
+2. **Dress each supplied interaction.** Take the field dot product of the seed and the slot's vector. Write the result as `x + ωz` with binary coefficients. Before the supplied qubit–bath interaction, apply Z if `z` is 1 and then X if `x` is 1. Undo the pulses in reverse order immediately afterward. Retain the same bath across slots. Its initial state is independent of the seed, data and tester, and the supplied interactions are fixed independently of the seed.
+3. **Use the corrected qubit between slots.** Apply any intervening logical operations after undoing the frame and before dressing the next slot. A user can measure at these ports and use their own outcomes to select later operations. The schedule itself requires no measurements. The error bound above compares the accessible output, averaged over the private seed, with the same logical operations separated by ideal identity slots.
+
+Each slot costs one field dot product using `O(m)` field operations and up to one Pauli frame operation at each boundary. With separate X and Z pulses, that is at most four pulses per slot. For finite-duration pulses, use the [joint slot-error budget](science/control-robustness.md#pulse-budgets) on the qubit and retained bath.
+
 ## Read the science
 
 The [scientific account](science/README.md) starts with the control mechanism and connects the proofs to the physical resources.
