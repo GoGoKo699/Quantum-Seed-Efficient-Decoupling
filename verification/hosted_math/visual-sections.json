@@ -1,0 +1,16 @@
+{
+  "README.md": [
+    "Run the private Pauli schedule",
+    "Results"
+  ],
+  "science/seed.md": [
+    "Finite-field construction",
+    "Seed count and pulse sequence"
+  ],
+  "science/control-robustness.md": [
+    "Pulse budgets"
+  ],
+  "learning/WATROUS_BRIDGE.md": [
+    "From one Pauli average to a causal process"
+  ]
+}
